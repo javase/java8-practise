@@ -13,15 +13,21 @@ public class ArraysPractise {
 	public static void main(String[] args) {
 		// e 的参数类型是编译器推测出来的
 		Arrays.asList("a", "b", "c").forEach(e -> System.out.print(e));
+
 		System.out.println("\n-------------------------------");
+
 		Arrays.asList("b", "c", "d").forEach((String e) -> System.out.print(e));
+
 		System.out.println("\n-------------------------------");
+
 		// 复杂一点儿的，放在花括号中
 		Arrays.asList(1, 2, 3).forEach(e -> {
 			System.out.print(e);
 			System.out.print(e * 10);
 		});
+
 		System.out.println("\n-------------------------------");
+
 		// 引用局部变量
 		Arrays.asList("tom", "jerry", "jack").forEach(e -> {
 			System.out.print(e.concat(separator));

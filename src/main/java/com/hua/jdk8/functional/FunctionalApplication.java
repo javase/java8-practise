@@ -3,7 +3,7 @@ package com.hua.jdk8.functional;
 
 /**
  * created at 2018-04-09 17:25
- * @author limenghua
+ * @author lerry
  */
 public class FunctionalApplication {
 	public static void main(String[] args) {

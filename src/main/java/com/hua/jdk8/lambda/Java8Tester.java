@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * java8和java7的风格区别
  * created at 2018-04-24 16:43
- * @author limenghua
+ * @author lerry
  */
 public class Java8Tester {
 

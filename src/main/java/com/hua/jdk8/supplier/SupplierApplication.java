@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 方法引用使得开发者可以直接引用现存的方法、Java类的构造方法或者实例对象
  * created at 2018-04-09 17:40
- * @author limenghua
+ * @author lerry
  */
 public class SupplierApplication {
 

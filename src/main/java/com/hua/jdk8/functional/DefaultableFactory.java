@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 
 /**
  * created at 2018-04-09 17:24
- * @author limenghua
+ * @author lerry
  */
 public interface DefaultableFactory {
 	static Defaultable create(Supplier<Defaultable> supplier) {

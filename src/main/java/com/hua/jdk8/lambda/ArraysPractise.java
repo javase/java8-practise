@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * created at 2018-04-02 17:26
- * @author limenghua
+ * @author lerry
  */
 public class ArraysPractise {
 

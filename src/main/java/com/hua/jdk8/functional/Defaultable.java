@@ -2,7 +2,7 @@ package com.hua.jdk8.functional;
 
 /**
  * created at 2018-04-09 17:13
- * @author limenghua
+ * @author lerry
  */
 public interface Defaultable {
 	default String notRequired() {

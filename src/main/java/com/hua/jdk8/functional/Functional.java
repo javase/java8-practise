@@ -1,9 +1,11 @@
 package com.hua.jdk8.functional;
 
 /**
- * 函数式接口
+ * <pre>
+ * 函数式接口，使用@FunctionalInterface注解
+ * </pre>
  * created at 2018-04-09 17:08
- * @author limenghua
+ * @author lerry
  */
 @FunctionalInterface
 public interface Functional {

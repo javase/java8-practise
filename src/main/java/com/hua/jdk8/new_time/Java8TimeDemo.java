@@ -60,5 +60,9 @@ public class Java8TimeDemo {
 		printlnf("格式化时间[yyyy-MM-dd HH:mm:ss]：%s", ldt1.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 		printlnf("格式化时间[BASIC_ISO_DATE]：%s", ldt1.format(DateTimeFormatter.BASIC_ISO_DATE));
 		printlnf("格式化时间[ISO_ORDINAL_DATE]：%s", ldt1.format(DateTimeFormatter.ISO_ORDINAL_DATE));
+
+		printlnf("获取当前日期早8点到晚8点: %s  %s",
+				todayDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + " 07:59:59",
+				todayDate.plusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + " 08:00:01");
 	}
 }

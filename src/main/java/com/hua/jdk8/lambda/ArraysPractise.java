@@ -1,6 +1,10 @@
 package com.hua.jdk8.lambda;
 
+import static com.hua.jdk8.utils.Print.*;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * created at 2018-04-02 17:26
@@ -41,6 +45,23 @@ public class ArraysPractise {
 		Arrays.asList("a", "f", "d").sort((e1, e2) -> {
 			int result = e1.compareTo(e2);
 			return result;
+		});
+
+		printlnf("List为空时的forEach，会报错：NullPointerException");
+		List<String> nullList = null;
+		try {
+			nullList.forEach(e -> {
+				System.out.println(e);
+			});
+		}
+		catch (NullPointerException e) {
+			e.printStackTrace();
+		}
+
+		printlnf("List.size()为0时的forEach，不报错，无输出");
+		List<String> zeroList = new ArrayList<>();
+		zeroList.forEach(e -> {
+			System.out.println(e);
 		});
 	}
 }

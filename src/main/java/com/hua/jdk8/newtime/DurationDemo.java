@@ -1,4 +1,4 @@
-package com.hua.jdk8.new_time;
+package com.hua.jdk8.newtime;
 
 import static com.hua.jdk8.utils.Print.*;
 

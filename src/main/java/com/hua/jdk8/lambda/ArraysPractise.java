@@ -63,5 +63,7 @@ public class ArraysPractise {
 		zeroList.forEach(e -> {
 			System.out.println(e);
 		});
+
+
 	}
 }

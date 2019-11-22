@@ -1,5 +1,7 @@
 package com.hua.jdk8.lambda;
 
+import static com.hua.jdk8.utils.Print.*;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -38,10 +40,22 @@ public class Java8Tester {
 
 		tester.sortUsingJava8(names2);
 		System.out.println(names2);
+
+		printlnf("使用 Java8 的方法引用 用法，对List进行排序");
+		tester.sortUsingJava8Reference(names2);
+		printlnf("%s", names2);
 	}
 
 	private void sortUsingJava8(List<String> names) {
 		Collections.sort(names, (s1, s2) -> s1.compareTo(s2));
+	}
+
+	/**
+	 * 使用 Java8 的方法引用 用法，对List进行排序
+	 * @param names
+	 */
+	private void sortUsingJava8Reference(List<String> names) {
+		Collections.sort(names, String::compareTo);
 	}
 
 	private void sortUsingJava7(List<String> names) {

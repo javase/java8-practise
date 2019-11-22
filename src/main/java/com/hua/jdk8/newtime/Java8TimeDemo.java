@@ -1,4 +1,4 @@
-package com.hua.jdk8.new_time;
+package com.hua.jdk8.newtime;
 
 import static com.hua.jdk8.utils.Print.*;
 
@@ -42,6 +42,10 @@ public class Java8TimeDemo {
 
 		LocalDate birthday = LocalDate.of(1990, 10, 12);
 		printlnf("指定日期构造LocalDate对象：%s", birthday);
+
+		LocalDate ymdDate = LocalDate.parse("1990-06-06",DateTimeFormatter.ISO_DATE);
+		printlnf("指定格式的日期构造LocalDate对象：%s", ymdDate);
+
 		MonthDay birthdayMd = MonthDay.of(birthday.getMonth(), birthday.getDayOfMonth());
 		MonthDay today = MonthDay.from(LocalDate.of(2016, 10, 12));
 		printlnf("MonthDay不包含年份信息：%s", birthdayMd.equals(today));
@@ -64,5 +68,7 @@ public class Java8TimeDemo {
 		printlnf("获取当前日期早8点到晚8点: %s  %s",
 				todayDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + " 07:59:59",
 				todayDate.plusDays(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + " 08:00:01");
+
+
 	}
 }

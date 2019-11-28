@@ -36,7 +36,9 @@ public class ReadPositiveIntParam {
                 if (i > 0) {
                     return i;
                 }
-            } catch (NumberFormatException nfe) { }
+            } catch (NumberFormatException nfe) {
+
+            }
         }
         return 0;
     }

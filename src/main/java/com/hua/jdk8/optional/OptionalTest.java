@@ -18,6 +18,10 @@ import java.util.function.Supplier;
 public class OptionalTest {
 
 	public static void main(String[] args) {
+
+		printlnf("空的Optional，调用isPresent会返回：%s", Optional.empty().isPresent());
+
+
 		// 返回具有指定的当前非空值的可选值 如果参数为空，会抛出NullPointerException异常
 		Optional<Integer> optional01 = Optional.of(1);
 		printlnf(optional01.toString());

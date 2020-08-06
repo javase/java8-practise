@@ -8,6 +8,8 @@ public class OptionalMain {
 
 
 	public static void main(String[] args) {
+		System.out.println(System.nanoTime());
+		System.out.println(System.currentTimeMillis());
 		Insurance insurance = new Insurance("中国人寿");
 		Car car = new Car(Optional.of(insurance));
 		Person person = new Person(Optional.of(car));
@@ -22,6 +24,8 @@ public class OptionalMain {
 		Optional<Person> optPerson = Optional.of(person);
 		String nameInCar = getCarInsuranceName(optPerson);
 		printlnf(nameInCar);
+
+		printlnf("Optional.empty().isPresent():%s", Optional.empty().isPresent());
 
 	}
 

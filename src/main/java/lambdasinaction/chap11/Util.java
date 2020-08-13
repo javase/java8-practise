@@ -1,7 +1,5 @@
 package lambdasinaction.chap11;
 
-import static com.hua.jdk8.utils.Print.*;
-
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.List;
@@ -10,6 +8,9 @@ import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Util {
 
 	private static final Random RANDOM = new Random(0);
@@ -20,7 +21,7 @@ public class Util {
 	 * 人为延迟1秒
 	 */
 	public static void delay() {
-		printlnf("[delay]1s");
+		log.info("[delay]1s");
 		int delay = 1000;
 		//int delay = 500 + RANDOM.nextInt(2000);
 		try {

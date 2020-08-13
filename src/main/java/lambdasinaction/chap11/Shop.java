@@ -6,6 +6,7 @@ import static lambdasinaction.chap11.Util.*;
 import java.util.Random;
 
 /**
+ * ֵ使用CompletableFuture构建异步应用
  * 商店类
  */
 public class Shop {
@@ -32,6 +33,7 @@ public class Shop {
 
 	/**
 	 * 计算价格，会延时1秒
+	 * 使用charAt，根据产品名称，生成一个随机值作为价格
 	 * @param product
 	 * @return
 	 */

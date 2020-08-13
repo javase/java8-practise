@@ -32,16 +32,20 @@ public class Shop {
 	}
 
 	/**
-	 * 异步获取价格
+	 * 异步获取商品价格
 	 * @param product
 	 * @return
 	 */
 	public Future<Double> getPriceAsync(String product) {
+		// 包含计算的结果
 		CompletableFuture<Double> futurePrice = new CompletableFuture<>();
 		new Thread(() -> {
+			// 在新的线程中，异步执行计算方法
 			double price = calculatePrice(product);
+			// 需要长时间计算的任务结束并得出结果时，设置Future的返回值
 			futurePrice.complete(price);
 		}).start();
+		// 无需等待还没结束的计算，直接返回Future对象
 		return futurePrice;
 	}
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<property name="log_dir" value="/usr/local/dir_samba/HC_logs/java8-practise"/>
+	<property name="APP_NAME" value="java8-practise"/>
+	<contextName>${APP_NAME}</contextName>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder" charset="UTF-8">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%-8thread] %-5level %class{0}.java:%line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<root level="info">
+		<appender-ref ref="STDOUT"/>
+	</root>
+
+
+</configuration>

@@ -49,6 +49,11 @@ public class Shop {
 		return futurePrice;
 	}
 
+	/**
+	 * 异步执行过程中，对于异常的处理
+	 * @param product
+	 * @return
+	 */
 	public Future<Double> getPriceAsyncWithEx(String product) {
 		CompletableFuture<Double> futurePrice = new CompletableFuture();
 		new Thread(() -> {

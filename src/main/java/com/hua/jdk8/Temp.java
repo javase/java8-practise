@@ -1,18 +1,26 @@
 package com.hua.jdk8;
 
-import static com.hua.jdk8.utils.Print.*;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.ArrayList;
 
 /**
  * created at 2019-11-22 19:21
  * @author lerry
  */
 public class Temp {
+	static int a = 0;
+
 	public static void main(String[] args) {
-		Stream.iterate(0, n -> n + 2)
-				.forEach(System.out::println);
+		ArrayList<String> stringList = new ArrayList<>();
+		stringList.add("a");
+		stringList.add("b");
+		stringList.add("c");
+
+		stringList.stream().forEach(str -> {
+			if (str.equals("b")) {
+				return; // only skips this iteration.
+			}
+
+			System.out.println(str);
+		});
 	}
 }

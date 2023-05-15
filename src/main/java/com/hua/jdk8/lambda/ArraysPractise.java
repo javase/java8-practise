@@ -1,6 +1,6 @@
 package com.hua.jdk8.lambda;
 
-import static com.hua.jdk8.utils.Print.*;
+import static com.hua.jdk8.utils.Print.printlnf;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,7 +63,6 @@ public class ArraysPractise {
 		zeroList.forEach(e -> {
 			System.out.println(e);
 		});
-
 
 	}
 }

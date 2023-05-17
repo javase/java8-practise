@@ -1,4 +1,4 @@
-package com.hua.jdk8.supplier;
+package com.hua.jdk8.method_reference;
 
 import java.util.function.Supplier;
 
